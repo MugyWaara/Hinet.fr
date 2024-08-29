@@ -1,0 +1,389 @@
+body {
+  font-family: Candara;
+  margin: 0;
+  padding: 0;
+}
+
+.active {
+  box-shadow: rgb(255, 222, 173) 3px 3px 6px 0px inset,
+    #d9d9d9b4 -3px -3px 6px 1px inset;
+}
+
+header {
+  background-color: #e9ebef;
+  color: #00014d36;
+  padding: 1em 0;
+  box-shadow: rgba(0, 2, 113, 0.35) 0px -15px 36px -28px inset;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
+.logo {
+  width: 100px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li a {
+  color: #080039;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 7px;
+  border-radius: 7px;
+  transition: 0.2s ease-out;
+}
+
+.menu li a:hover {
+  color: #080039;
+  text-decoration: none;
+  box-shadow: rgb(232, 221, 204) 3px 3px 6px 0px inset,
+    #d9d9d9b4 -3px -3px 6px 1px inset;
+  padding: 7px;
+}
+
+.button {
+  text-decoration: none;
+  padding: 15px;
+  font-family: arial;
+  font-size: 1.2em;
+  color: #ffffff;
+  background-color: #f79646;
+  border-radius: 25px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.2s ease-out;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #f79646;
+  box-shadow: #f79646 0px 4px 8px 1px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.button2{
+  text-decoration: none;
+  padding: 20px;
+  font-family: arial;
+  font-size: 1.5em;
+  color: #ffffff;
+  background-color: #f79646;
+  border-radius: 35px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.2s ease-out;
+}
+
+.button2:hover {
+  background-color: #ffffff;
+  color: #f79646;
+  box-shadow: #f79646 0px 4px 8px 1px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.button3 {
+  text-decoration: none;
+  padding: 15px;
+  margin: 3em;
+  font-family: arial;
+  font-size: 1.2em;
+  color: #ffffff;
+  background-color: #0e0053;
+  border-radius: 25px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.2s ease-out;
+}
+
+.button3:hover {
+  background-color: #ffffff;
+  color: #0e0053;
+  box-shadow: #0e0053 0px 4px 8px 1px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  button {
+    align-self: stretch;
+    text-align: center;
+    margin: 10px 0;
+    padding: 0.5em;
+    border-radius: 20px;
+  }
+
+  .card {
+    padding-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    width: 20em;
+    top: 30%;
+  }
+
+  .container img {
+    height: 15%;
+  }
+
+  .container {
+    background-image: url("../Images/background_768.jpg"); /* background image for tablets */
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar {
+    padding: 0 0.5em;
+    align-items: center;
+  }
+
+  .menu li {
+    margin: 5px 0;
+    align-items: center;
+  }
+
+  button {
+    padding: 0.5em;
+    margin: 10px 0;
+    border-radius: 20px;
+  }
+
+  .card {
+    padding-bottom: 40px;
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    width: 20em;
+    top: 30%;
+  }
+
+  .container img {
+    height: 10%;
+  }
+
+  .container {
+    background-image: url("../Images/background_480.jpg"); /* background image for mobile devices */
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+footer {
+  background-color: #e9ebef;
+  color: #00014d36;
+  padding: 2em 1em;
+  text-align: center;
+  box-shadow: rgba(0, 2, 113, 0.35) 0px -20px 36px -28px inset;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.footer-logo img {
+  width: 100px;
+}
+
+.footer-links,
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.footer-links a,
+.footer-social a {
+  color: #00014d36;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  text-decoration: underline;
+  color: #00014d36;
+}
+
+.footer-social img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.container {
+  position: relative;
+  background-image: url("../Images/background_any.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(235, 100%, 21%, 25%);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 7em;
+  color: white;
+}
+
+.card h1 {
+  font-size: 2.5em;
+  padding-bottom: 0.2em;
+}
+
+.card h2 {
+  padding-bottom: 0.9em;
+  font-size: 1.3em;
+  color: rgba(252, 252, 252, 0.84);
+}
+
+main {
+  position: relative;
+  background-color: #e9ebef;
+}
+
+.bandeau {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.titre h1 {
+  font-size: 2em;
+  color: rgb(202, 118, 0);
+  margin-bottom: 2em; /* Ajuste l'espace sous le titre <h1> */
+}
+
+.titre h2 {
+  padding-left: 1.5em;
+  font-size: 1.5em;
+  color: rgb(77, 77, 77);
+  line-height: 0.1; /* Ajuste la hauteur de ligne si nécessaire */
+}
+
+.curve {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.curve {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: translateY(-50px);
+}
+
+.curve svg {
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 125px;
+  margin-top: -3em;
+}
+
+.line {
+  padding-bottom: 1em;
+}
+
+.titre h2 .line {
+  display: block;
+  margin-bottom: 20px; /* Ajustez l'espace entre les lignes */
+}
+
+.titre h2 .line2 {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.line2 {
+  padding-bottom: 1.2em;
+}
+
+.bandeau2 {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Space between cards */
+  padding: 7em;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900"><rect fill="%23e9ebef" width="1600" height="900"/><defs><linearGradient id="a" x1="0" x2="0" y1="1" y2="0" gradientTransform="rotate(307,0.5,0.5)"><stop offset="0" stop-color="%230004FF"/><stop offset="1" stop-color="%23009FFF"/></linearGradient><linearGradient id="b" x1="0" x2="0" y1="0" y2="1" gradientTransform="rotate(316,0.5,0.5)"><stop offset="0" stop-color="%23FF2400"/><stop offset="1" stop-color="%23FF8900"/></linearGradient></defs><g fill="%23FFF" fill-opacity="0" stroke-miterlimit="10"><g stroke="url(%23a)" stroke-width="4.62"><path transform="translate(-91.7 3.6) rotate(-2.4 1409 581) scale(0.943)" d="M1409 581 1450.35 511 1490 581z"/><circle stroke-width="1.54" transform="translate(-117.5 71) rotate(5.8 800 450) scale(1.004)" cx="500" cy="100" r="40"/><path transform="translate(14.3 -73.5) rotate(42.5 401 736) scale(1.004)" d="M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z"/></g><g stroke="url(%23b)" stroke-width="1.4"><path transform="translate(426 2.6) rotate(-0.65 150 345) scale(0.99)" d="M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z"/><rect stroke-width="3.08" transform="translate(-113.5 -193) rotate(32.4 1089 759)" x="1039" y="709" width="100" height="100"/><path transform="translate(-252.4 67.6) rotate(5.4 1400 132) scale(0.845)" d="M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z"/></g></g></svg>') no-repeat center center;
+  background-size: 100;
+}
+
+.card1 {
+  margin-top: 60px; /* Slightly above card2 */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: red;
+  border-radius: 1em;
+}
+
+.card1 h1 {
+  padding-bottom: 0.5em;
+}
+
+.card1 h2 {
+  padding-bottom: 1.5em;
+}
+
+.card2 {
+  margin-top: 20px; /* Slightly above card3 */
+  padding-top: 10px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: red;
+}
+
+.card3 {
+  margin-top: 90px; /* Base level */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: red;
+}
+
